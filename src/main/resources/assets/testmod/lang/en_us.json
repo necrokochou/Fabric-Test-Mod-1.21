@@ -2,15 +2,22 @@
   "item.testmod.pink_garnet": "Pink Garnet",
   "item.testmod.raw_pink_garnet": "Raw Pink Garnet",
   "item.testmod.chisel": "Chisel",
+  "item.testmod.cauliflower": "Cauliflower",
+  "item.testmod.milo_drink": "Milo Drink",
+  "item.testmod.starlight_ashes": "Starlight Ashes",
 
   "block.testmod.pink_garnet_block": "Block of Pink Garnet",
   "block.testmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
-
   "block.testmod.pink_garnet_ore": "Pink Garnet Ore",
   "block.testmod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
-
   "block.testmod.magic_block": "Magic Block",
 
-  "itemgroup.testmod.pink_garnet_items": "Pink Garnet Items",
-  "itemgroup.testmod.pink_garnet_blocks": "Pink Garnet Blocks"
+  "itemgroup.testmod.custom_items": "Custom Items",
+  "itemgroup.testmod.custom_blocks": "Custom Blocks",
+
+  "tooltip.testmod.magic_block": "A very §lmagical§r block",
+  "tooltip.testmod.chisel.shift_down": "Chisel a brick and make them sick",
+  "tooltip.testmod.chisel": "Press §eShift§r for more information",
+  "tooltip.testmod.milo_drink": "Milo Everyday!"
+
 }
