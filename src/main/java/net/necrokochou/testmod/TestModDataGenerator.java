@@ -2,7 +2,7 @@ package net.necrokochou.testmod;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.necrokochou.testmod.datagen.ModBlockTagProvider;
+import net.necrokochou.testmod.datagen.*;
 
 public class TestModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -10,5 +10,9 @@ public class TestModDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModItemTagProvider::new);
+		pack.addProvider(ModLootTableProvider::new);
+		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 	}
 }

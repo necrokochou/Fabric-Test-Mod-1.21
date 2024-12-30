@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/necrokochou/Fabric-Test-Mod-1.21"
 	},
 	"license": "MIT",
 	"icon": "assets/testmod/icon.png",
