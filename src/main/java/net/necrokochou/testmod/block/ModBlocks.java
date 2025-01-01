@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.necrokochou.testmod.TestMod;
 import net.necrokochou.testmod.block.custom.MagicBlock;
+import net.necrokochou.testmod.block.custom.PinkGarnetLampBlock;
 
 public class ModBlocks {
 
@@ -90,6 +91,12 @@ public class ModBlocks {
                             .strength(2f)
                             .requiresTool()
                             .nonOpaque()));
+
+    public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",
+            new PinkGarnetLampBlock(AbstractBlock.Settings.create()
+                    .strength(1f)
+                    .requiresTool()
+                    .luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
