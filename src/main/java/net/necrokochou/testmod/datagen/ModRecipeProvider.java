@@ -6,12 +6,14 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 import net.necrokochou.testmod.TestMod;
 import net.necrokochou.testmod.block.ModBlocks;
+import net.necrokochou.testmod.datagen.custom.CustomRecipeProvider;
 import net.necrokochou.testmod.item.ModItems;
 
 import java.util.List;
@@ -37,10 +39,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_PINK_GARNET_BLOCK)
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .input('#', ModItems.RAW_PINK_GARNET)
+                .pattern("111")
+                .pattern("111")
+                .pattern("111")
+                .input('1', ModItems.RAW_PINK_GARNET)
                 .criterion(hasItem(ModItems.RAW_PINK_GARNET), conditionsFromItem(ModItems.RAW_PINK_GARNET))
                 .offerTo(recipeExporter);
 
@@ -69,5 +71,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         createDoorRecipe(ModBlocks.PINK_GARNET_DOOR, Ingredient.ofItems(ModBlocks.PINK_GARNET_BLOCK));
         createTrapdoorRecipe(ModBlocks.PINK_GARNET_TRAPDOOR, Ingredient.ofItems(ModBlocks.PINK_GARNET_BLOCK));
+
+        CustomRecipeProvider.createSwordRecipe(recipeExporter, ModItems.PINK_GARNET_SWORD, ModItems.PINK_GARNET, Items.STICK);
+        CustomRecipeProvider.createPickaxeRecipe(recipeExporter, ModItems.PINK_GARNET_PICKAXE, ModItems.PINK_GARNET, Items.STICK);
+        CustomRecipeProvider.createShovelRecipe(recipeExporter, ModItems.PINK_GARNET_SHOVEL, ModItems.PINK_GARNET, Items.STICK);
+        CustomRecipeProvider.createAxeRecipe(recipeExporter, ModItems.PINK_GARNET_AXE, ModItems.PINK_GARNET, Items.STICK);
+        CustomRecipeProvider.createHoeRecipe(recipeExporter, ModItems.PINK_GARNET_HOE, ModItems.PINK_GARNET, Items.STICK);
+        CustomRecipeProvider.createHammerRecipe(recipeExporter, ModItems.PINK_GARNET_HAMMER, ModItems.PINK_GARNET, Items.STICK);
     }
 }

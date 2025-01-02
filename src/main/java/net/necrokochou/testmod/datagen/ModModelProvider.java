@@ -3,6 +3,7 @@ package net.necrokochou.testmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 import net.necrokochou.testmod.block.ModBlocks;
 import net.necrokochou.testmod.block.custom.PinkGarnetLampBlock;
@@ -46,9 +47,22 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PINK_GARNET, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_PINK_GARNET, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHISEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
         itemModelGenerator.register(ModItems.MILO_DRINK, Models.GENERATED);
         itemModelGenerator.register(ModItems.STARLIGHT_ASHES, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.PINK_GARNET_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PINK_GARNET_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PINK_GARNET_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PINK_GARNET_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PINK_GARNET_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.PINK_GARNET_HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_BOOTS);
     }
 }

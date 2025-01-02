@@ -1,10 +1,29 @@
 {
+  "itemgroup.testmod.custom_items": "Custom Items",
+  "itemgroup.testmod.custom_blocks": "Custom Blocks",
+
+
   "item.testmod.pink_garnet": "Pink Garnet",
   "item.testmod.raw_pink_garnet": "Raw Pink Garnet",
   "item.testmod.chisel": "Chisel",
   "item.testmod.cauliflower": "Cauliflower",
   "item.testmod.milo_drink": "Milo Drink",
   "item.testmod.starlight_ashes": "Starlight Ashes",
+
+  "item.testmod.pink_garnet_sword": "Pink Garnet Sword",
+  "item.testmod.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
+  "item.testmod.pink_garnet_shovel": "Pink Garnet Shovel",
+  "item.testmod.pink_garnet_axe": "Pink Garnet Axe",
+  "item.testmod.pink_garnet_hoe": "Pink Garnet Hoe",
+
+  "item.testmod.pink_garnet_hammer": "Pink Garnet Hammer",
+
+
+  "item.testmod.pink_garnet_helmet": "Pink Garnet Helmet",
+  "item.testmod.pink_garnet_chestplate": "Pink Garnet Chestplate",
+  "item.testmod.pink_garnet_leggings": "Pink Garnet Leggings",
+  "item.testmod.pink_garnet_boots": "Pink Garnet Boots",
+
 
   "block.testmod.pink_garnet_block": "Block of Pink Garnet",
   "block.testmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
@@ -27,8 +46,6 @@
 
   "block.testmod.pink_garnet_lamp": "Pink Garnet Lamp",
 
-  "itemgroup.testmod.custom_items": "Custom Items",
-  "itemgroup.testmod.custom_blocks": "Custom Blocks",
 
   "tooltip.testmod.magic_block": "A very §lmagical§r block",
   "tooltip.testmod.chisel.shift_down": "Chisel a brick and make them sick",
